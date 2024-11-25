@@ -1,0 +1,106 @@
+/* Estilo para o corpo da página */
+body {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    font: normal 16pt "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background: #ff6f61;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+    border-bottom: 5px solid #e94e3e;
+}
+
+/* Estilo da seção */
+section {
+    background: #fffaf0;
+    border-radius: 12px;
+    padding: 20px;
+    width: 550px;
+    margin: 30px auto;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Estilo dos inputs e botão */
+section input[type="number"] {
+    padding: 10px;
+    border: 2px solid #ffa07a;
+    border-radius: 5px;
+    font-size: 14px;
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+section input[type="number"]:focus {
+    border-color: #ff6347;
+}
+
+section input[type="button"] {
+    background: #ff6f61;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+section input[type="button"]:hover {
+    background: #e94e3e;
+    transform: scale(1.05);
+}
+
+/* Estilo para o texto do resultado */
+#res {
+    background: #fef3e6;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do rodapé */
+footer {
+    background: #ff6f61;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 5px solid #e94e3e;
+}
+
+/* Adicionando animações para o resultado */
+#res {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

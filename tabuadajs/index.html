@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Alterei para português, considerando o público -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Gerador de Tabuada</h1>
+    </header>
+    
+    <section>
+        <div>
+            <label for="txtn">Número:</label>
+            <input type="number" id="txtn" placeholder="Digite um número">
+            <button onclick="tabuada()">Gerar Tabuada</button>
+        </div>
+        
+        <div>
+            <select id="seltab" size="10">
+                <option disabled>Selecione um número acima para gerar a tabuada</option>
+            </select>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
